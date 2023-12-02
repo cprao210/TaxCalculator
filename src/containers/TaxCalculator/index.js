@@ -8,21 +8,15 @@ const TaxCalculator = () => {
   const [income, setIncome] = useState(initialState.income);
   const [age, setAge] = useState(initialState.age);
 
-  const handleInput = useCallback(
-    (e) => {
-      const { value } = e.target;
-      setIncome(value);
-    },
-    [income]
-  );
+  const handleInput = useCallback((e) => {
+    const { value } = e.target;
+    setIncome(value);
+  }, []);
 
-  const handleAge = useCallback(
-    (e) => {
-      const { value } = e.target;
-      setAge(value);
-    },
-    [age]
-  );
+  const handleAge = useCallback((e) => {
+    const { value } = e.target;
+    setAge(value);
+  }, []);
 
   return (
     <div className="taxCalculatorModel">
