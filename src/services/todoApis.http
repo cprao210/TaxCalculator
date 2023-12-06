@@ -1,0 +1,29 @@
+###
+GET https://g8m2f5ln-3000.inc1.devtunnels.ms/api/todos
+ 
+
+POST https://g8m2f5ln-3000.inc1.devtunnels.ms/api/todos
+content-type: application/json
+ 
+{
+    "task":"Prepare Lunch"
+}
+ 
+###
+PUT https://g8m2f5ln-3000.inc1.devtunnels.ms/api/todos/1
+content-type: application/json
+ 
+{
+    "task":"Prepare Breakfast"
+}
+ 
+###
+DELETE  https://g8m2f5ln-3000.inc1.devtunnels.ms/api/todos/1
+
+// const todoApis={
+
+
+//     getTodo:()=>{
+//         const res= fetch('https://g8m2f5ln-3000.inc1.devtunnels.ms/api/todos')
+//     }
+// }
